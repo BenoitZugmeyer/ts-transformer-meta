@@ -1,0 +1,31 @@
+{
+  "name": "ts-transformer-meta",
+  "version": "0.0.1",
+  "description": "Experimental TypeScript transformer to access meta informations for a type",
+  "scripts": {
+    "prepublishOnly": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "meta",
+    "transformer"
+  ],
+  "author": "Benoît Zugmeyer <bzugmeyer@gmail.com>",
+  "license": "ISC",
+  "main": "./index.js",
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "@types/node": "^10.12.18",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "3.x"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/js-with-ts"
+  }
+}

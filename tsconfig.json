@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "lib": ["es2018"],
+    "strict": true
+  },
+  "files": ["index.ts", "transformer.ts"]
+}

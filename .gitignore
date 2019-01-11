@@ -1,0 +1,5 @@
+/node_modules/
+/example/node_modules/
+/example/.rpt2_cache/
+/example/dist/
+/*.js

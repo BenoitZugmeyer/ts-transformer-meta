@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`classes 1`] = `
+"import { meta } from 'ts-transformer-meta';
+class Biz {
+    get foo() {
+        return 42;
+    }
+}
+({
+    flags: 524288,
+    objectFlags: 5,
+    properties: [{
+            name: \\"foo\\",
+            value: {
+                flags: 8
+            },
+            optional: false
+        }]
+});
+"
+`;
+
+exports[`enum 1`] = `
+"import { meta } from 'ts-transformer-meta';
+var A;
+(function (A) {
+    A[A[\\"Foo\\"] = 0] = \\"Foo\\";
+    A[A[\\"Bar\\"] = 1] = \\"Bar\\";
+})(A || (A = {}));
+({
+    flags: 1049600,
+    types: [{
+            flags: 1280,
+            value: 0
+        }, {
+            flags: 1280,
+            value: 1
+        }]
+});
+"
+`;
+
+exports[`nested interfaces 1`] = `
+"import { meta } from 'ts-transformer-meta';
+({
+    flags: 524288,
+    objectFlags: 2,
+    properties: [{
+            name: \\"a\\",
+            value: {
+                flags: 524288,
+                objectFlags: 2,
+                properties: [{
+                        name: \\"b\\",
+                        value: {
+                            flags: 8
+                        },
+                        optional: false
+                    }]
+            },
+            optional: false
+        }]
+});
+"
+`;
+
+exports[`optional property 1`] = `
+"import { meta } from 'ts-transformer-meta';
+({
+    flags: 524288,
+    objectFlags: 2,
+    properties: [{
+            name: \\"a\\",
+            value: {
+                flags: 8
+            },
+            optional: true
+        }]
+});
+"
+`;
+
+exports[`union 1`] = `
+"import { meta } from 'ts-transformer-meta';
+({
+    flags: 1048576,
+    types: [{
+            flags: 128,
+            value: \\"foo\\"
+        }, {
+            flags: 128,
+            value: \\"bar\\"
+        }]
+});
+"
+`;
